@@ -1,0 +1,15 @@
+{
+    "semi":false,
+     /** Not semicolons **/
+    "singleQuote": true,
+    /** Add single quote **/
+    "useTabs":true,
+    //Uses tabs
+    "tabWidth": 2,
+    /**Size of the tabs  **/
+    "bracketSpacing": true,
+    /** Allows spacing **/
+    "arrowParens": "avoid",
+    /** **/
+    "trailingComma": "es5"
+}

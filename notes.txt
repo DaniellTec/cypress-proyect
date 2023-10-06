@@ -1,0 +1,56 @@
+npm init
+install node.js ver 16
+node -ver
+npm install cypress@5.3.0 prettier
+add "cypress:open": "cypress open" in the parts of scripts in the package.json > npx cypress open, opens the interface of cypress
+install node.js -ver to 16 in case of errors
+downgrade cypress to 5.3.0 > npm install cypress@5.3.0 > upgrade to 9.7.0
+
+create tsconfig.json:
+
+{
+
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": "../node_modules",
+        "types": [
+            "cypress"
+        ]
+    },
+    "include": [
+        "**/*.*"
+    ]
+
+}
+
+create .prettierrc:
+
+{
+    "semi":false,
+     /** Not semicolons **/
+    "singleQuote": true,
+    /** Add single quote **/
+    "useTabs":true,
+    //Uses tabs
+    "tabWidth": 2,
+    /**Size of the tabs  **/
+    "bracketSpacing": true,
+    /** Allows spacing **/
+    "arrowParens": "avoid",
+    /** **/
+    "trailingComma": "es5"
+}
+
+package.json:
+
+*** In the part of script >  "cy:open": "cypress open" > npm run cy:open, runs the service in headless mode ***
+
+In cypress folder
+
+- Fixtures - Static data for tests, can create data
+
+- Integration - Stores the tests
+
+- Plugins - Stores the plugins 
+
+visit() - To see cypress in our browser
