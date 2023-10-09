@@ -22,12 +22,3 @@ describe('Another describe block', () => {
     })
 })
 
-describe('Browser actions', () => {
-    it('Should load correct url', () =>{
-       cy.visit('https://example.com', {timeout:10000})
-    })
-})
-
-//describe('Another describe block', () => {
-
-//})

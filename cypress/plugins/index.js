@@ -21,4 +21,4 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 }
 
-// Here we can setup the cyprus extensions, snapshots, libraries
+// Here we can setup/enable the cyprus extensions, snapshots, libraries
